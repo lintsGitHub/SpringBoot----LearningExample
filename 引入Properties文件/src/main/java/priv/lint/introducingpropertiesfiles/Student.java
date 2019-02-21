@@ -14,12 +14,11 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "student")
 @PropertySource("classpath:student.properties")
 public class Student {
-    String id;
-    String age;
+    int id;
+    int age;
     String name;
     /*
     * 这里就出现了一个问题：
     * 在properties文件中传过来的值只有使用String类型来进行接收
-    * 
     * */
 }
